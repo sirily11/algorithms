@@ -1,0 +1,23 @@
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      use_pygments: true
+  - codehilite
+  - toc:
+      permalink: true
+nav:
+  Algorithms:
+    Sort:
+      - Merge sort
+      - Insertion sort
+      - Selection sort
+      - A:
+          - A
+site_name: Algorithm
+theme:
+  name: material
