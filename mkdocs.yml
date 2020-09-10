@@ -11,13 +11,19 @@ markdown_extensions:
   - toc:
       permalink: true
 nav:
-  Algorithms:
-    Sort:
-      - Merge sort
-      - Insertion sort
-      - Selection sort
+  - Algorithms:
+      Sort:
+        - Merge sort: algorithms/sort/merge_sort.ipynb
+        - Insertion sort: algorithms/sort/insertion_sort.ipynb
+        - Selection sort: algorithms/sort/selection_sort.ipynb
+        - A:
+            - A: algorithms/sort/a/a.ipynb
+  - Sort2:
+      - Merge sort: sort2/merge_sort.ipynb
+      - Insertion sort: sort2/insertion_sort.ipynb
+      - Selection sort: sort2/selection_sort.ipynb
       - A:
-          - A
+          - A: sort2/a/a.ipynb
 site_name: Algorithm
 theme:
   name: material

@@ -11,6 +11,8 @@ pandas = "*"
 mkdocs = "*"
 pyyaml = "*"
 mkdocs-material = "*"
+pytest = "*"
+
 
 [requires]
 python_version = "3.8"
