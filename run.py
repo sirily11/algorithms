@@ -13,7 +13,6 @@ if __name__ == '__main__':
 
     print("Copy Js files")
     copytree('js', 'docs/js')
-    copy2('CNAME', 'site/')
 
     print("Copy index.md")
     with open('README.md', 'r') as f:

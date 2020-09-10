@@ -29,6 +29,7 @@ jobs:
       - name: Build Docs
         run: pipenv run python3 run.py
       - run: pipenv run mkdocs build
+      - run: cp CNAME site/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
