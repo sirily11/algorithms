@@ -40,11 +40,12 @@ def generate_config(folders: List[Folder]):
     configuration = {
         "site_name": "Algorithm",
         "nav": [],
-        "theme": {"name": "material"},
+        "theme": {"name": "material", "features": ["instant", "navigation.expand"]},
         "extra_javascript": [
             "javascripts/config.js",
             "https://polyfill.io/v3/polyfill.min.js?features=es6",
-            "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+            "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+            "js/expand.js"
         ],
         "markdown_extensions": [
             {"pymdownx.arithmatex": {
@@ -56,7 +57,6 @@ def generate_config(folders: List[Folder]):
                     "use_pygments": True
                 }
             },
-
             "codehilite",
             {
                 'toc': {

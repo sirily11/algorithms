@@ -2,6 +2,7 @@ extra_javascript:
 - javascripts/config.js
 - https://polyfill.io/v3/polyfill.min.js?features=es6
 - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+- js/expand.js
 markdown_extensions:
 -   pymdownx.arithmatex:
         generic: true
@@ -13,11 +14,12 @@ markdown_extensions:
 nav:
 -   Algorithms:
         Sort:
-        -   Merge sort: algorithms/sort/merge_sort
-        -   Insertion sort: algorithms/sort/insertion_sort
-        -   Selection sort: algorithms/sort/selection_sort
-        -   A:
-            -   A: algorithms/sort/a/a
+        -   Merge sort.ipynb: algorithms/sort/merge_sort.md
+        -   Insertion sort.ipynb: algorithms/sort/insertion_sort.md
+        -   Selection sort.ipynb: algorithms/sort/selection_sort.md
 site_name: Algorithm
 theme:
+    features:
+    - instant
+    - navigation.expand
     name: material
