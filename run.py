@@ -1,7 +1,7 @@
 from yaml import dump, load
 from docs_generator.config import *
 from docs_generator.utils import walk_folders, generate_markdown, generate_config
-from shutil import copytree
+from shutil import copytree, copy2
 
 if __name__ == '__main__':
     fs = walk_folders(notebook_folder)
@@ -13,6 +13,7 @@ if __name__ == '__main__':
 
     print("Copy Js files")
     copytree('js', 'docs/js')
+    copy2('CNAME', 'site/')
 
     print("Copy index.md")
     with open('README.md', 'r') as f:
