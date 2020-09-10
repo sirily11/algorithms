@@ -16,7 +16,7 @@ class SomeTest(unittest.TestCase):
         self.assertEqual({
             "A": {
                 "B": {
-                    "C": [{'D': 'a/b/c/d.txt'}, {'E': 'a/b/c/e.txt'}]
+                    "C": [{'D': 'a/b/c/d.md'}, {'E': 'a/b/c/e.md'}]
                 }
             }
         }, config)
@@ -40,7 +40,7 @@ class SomeTest(unittest.TestCase):
                     "cd": 'a/b/cd.txt'
                 },
                     {
-                        "C": [{'D': 'a/b/c/d.txt'}, {'E': 'a/b/c/e.txt'}]
+                        "C": [{'D': 'a/b/c/d.md'}, {'E': 'a/b/c/e.md'}]
                     },
                 ]
             }
@@ -63,7 +63,7 @@ class SomeTest(unittest.TestCase):
         self.assertEqual({
             "A": {
                 "B": {
-                    "C": [{'D': 'a/b/c/d.txt'}, {'E': 'a/b/c/e.txt'}]
+                    "C": [{'D': 'a/b/c/d.md'}, {'E': 'a/b/c/e.md'}]
                 }
             }
         }, config)

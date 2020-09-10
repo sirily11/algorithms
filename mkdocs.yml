@@ -14,9 +14,9 @@ markdown_extensions:
 nav:
 -   Algorithms:
         Sort:
-        -   Merge sort.ipynb: algorithms/sort/merge_sort.md
-        -   Insertion sort.ipynb: algorithms/sort/insertion_sort.md
-        -   Selection sort.ipynb: algorithms/sort/selection_sort.md
+        -   Merge sort: algorithms/sort/merge_sort.md
+        -   Insertion sort: algorithms/sort/insertion_sort.md
+        -   Selection sort: algorithms/sort/selection_sort.md
 site_name: Algorithm
 theme:
     features:

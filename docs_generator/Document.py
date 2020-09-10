@@ -30,14 +30,15 @@ class Document:
         self.path = path
 
     def get_name(self):
-        filename = basename(self.path)
-        # filename, ext = splitext(name)
+        name = basename(self.path)
+        filename, ext = splitext(name)
         filename = filename.replace('_', ' ')
         filename = filename.capitalize()
         return filename
 
     def get_output_name(self, ignore_name: str = ''):
-        return self.path.replace(f'{ignore_name}/', '').replace('.ipynb', '') + '.md'
+        name, ext = splitext(self.path)
+        return name.replace(f'{ignore_name}/', '').replace('.ipynb', '') + '.md'
 
     def __str__(self):
         return self.path
