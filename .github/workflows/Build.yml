@@ -25,7 +25,7 @@ jobs:
         run: pipenv install
       - name: Test with pytest
         run: |
-          pytest
+          pipenv run pytest
       - name: Build Docs
         run: pipenv run python3 run.py && mkdocs build
       - name: Deploy
