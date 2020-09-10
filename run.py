@@ -15,7 +15,7 @@ if __name__ == '__main__':
     copytree('js', 'docs/js')
 
     print("Copy index.md")
-    with open('index.md', 'r') as f:
+    with open('README.md', 'r') as f:
         content = f.read()
         with open('docs/index.md', 'w') as f1:
             f1.write(content)
