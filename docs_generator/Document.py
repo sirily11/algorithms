@@ -37,7 +37,7 @@ class Document:
         return filename
 
     def get_output_name(self, ignore_name: str = ''):
-        return self.path.replace(f'{ignore_name}/', '')
+        return self.path.replace(f'{ignore_name}/', '').replace('.ipynb', '')
 
     def __str__(self):
         return self.path

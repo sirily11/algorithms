@@ -1,29 +1,23 @@
 extra_javascript:
-  - javascripts/config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+- javascripts/config.js
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.highlight:
-      use_pygments: true
-  - codehilite
-  - toc:
-      permalink: true
+-   pymdownx.arithmatex:
+        generic: true
+-   pymdownx.highlight:
+        use_pygments: true
+- codehilite
+-   toc:
+        permalink: true
 nav:
-  - Algorithms:
-      Sort:
-        - Merge sort: algorithms/sort/merge_sort.ipynb
-        - Insertion sort: algorithms/sort/insertion_sort.ipynb
-        - Selection sort: algorithms/sort/selection_sort.ipynb
-        - A:
-            - A: algorithms/sort/a/a.ipynb
-  - Sort2:
-      - Merge sort: sort2/merge_sort.ipynb
-      - Insertion sort: sort2/insertion_sort.ipynb
-      - Selection sort: sort2/selection_sort.ipynb
-      - A:
-          - A: sort2/a/a.ipynb
+-   Algorithms:
+        Sort:
+        -   Merge sort: algorithms/sort/merge_sort
+        -   Insertion sort: algorithms/sort/insertion_sort
+        -   Selection sort: algorithms/sort/selection_sort
+        -   A:
+            -   A: algorithms/sort/a/a
 site_name: Algorithm
 theme:
-  name: material
+    name: material
