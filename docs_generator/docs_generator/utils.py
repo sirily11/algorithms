@@ -32,7 +32,7 @@ def generate_markdown(folders: List[Folder]):
         output_dir = os.path.join(output_dir_name, folder.name)
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
-        folder.files.sort()
+
         for file in folder.files:
             output, resources = exporter.from_filename(file.path)
             output_name = join(output_dir_name, file.get_output_name(notebook_folder))
