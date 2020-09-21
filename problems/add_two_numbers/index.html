@@ -16,7 +16,7 @@
     
     
       
-        <title>Combine sorted array - Algorithm</title>
+        <title>Add two numbers - Algorithm</title>
       
     
     
@@ -50,7 +50,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#combine-2-sorted-arrays" class="md-skip">
+        <a href="#example-1" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Combine sorted array
+              Add two numbers
             
           </span>
         </div>
@@ -197,6 +197,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../combine_sorted_array/" title="Combine sorted array" class="md-nav__link">
+      Combine sorted array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -204,23 +216,19 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Combine sorted array
+        Add two numbers
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Combine sorted array" class="md-nav__link md-nav__link--active">
-      Combine sorted array
+    <a href="./" title="Add two numbers" class="md-nav__link md-nav__link--active">
+      Add two numbers
     </a>
     
       
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -230,8 +238,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#solution" class="md-nav__link">
-    Solution
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-list" class="md-nav__link">
+    Create list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    Result
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-on" class="md-nav__link">
+    Time: \(O(n)\)
   </a>
   
 </li>
@@ -240,18 +269,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../add_two_numbers/" title="Add two numbers" class="md-nav__link">
-      Add two numbers
-    </a>
   </li>
 
         
@@ -362,8 +379,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -372,8 +387,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#solution" class="md-nav__link">
-    Solution
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-list" class="md-nav__link">
+    Create list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    Result
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-on" class="md-nav__link">
+    Time: \(O(n)\)
   </a>
   
 </li>
@@ -394,46 +430,85 @@
                   
                 
                 
-                <h1 id="combine-2-sorted-arrays">Combine 2 sorted arrays<a class="headerlink" href="#combine-2-sorted-arrays" title="Permanent link">&para;</a></h1>
-<ul>
-<li>Input: arr1: [1,2,3], arr2: [4,5,6]</li>
-<li>Output: [1,2,3,4,5,6]</li>
-</ul>
-<h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">combine</span><span class="p">(</span><span class="n">arr1</span><span class="p">,</span> <span class="n">arr2</span><span class="p">):</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
-
-    <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr1</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">arr1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">arr2</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
-            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">arr1</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">arr2</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
-            <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
-
-    <span class="k">if</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr2</span><span class="p">):</span>
-        <span class="n">output</span> <span class="o">+=</span> <span class="n">arr2</span><span class="p">[</span><span class="n">j</span><span class="p">:]</span>
-
-    <span class="k">return</span> <span class="n">output</span>
+                  <h1>Add two numbers</h1>
+                
+                <p>Add two numbers</p>
+<p>You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</p>
+<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
+<h2 id="example-1">Example 1<a class="headerlink" href="#example-1" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c">Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)</span>
+<span class="c">Output: 7 -&gt; 0 -&gt; 8</span>
+<span class="c">Explanation: 342 + 465 = 807.</span>
 </code></pre></div>
 
 
-<div class="codehilite"><pre><span></span><code><span class="n">combine</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">ListNode</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">next</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">val</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">next</span><span class="p">:</span> <span class="n">ListNode</span> <span class="o">=</span> <span class="nb">next</span>
+
+    <span class="k">def</span> <span class="nf">print</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">val</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">next</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">next</span><span class="o">.</span><span class="n">print</span><span class="p">()</span>
 </code></pre></div>
 
 
-<div class="highlight"><pre><span></span><code>[1, 2, 3, 4, 5, 6]
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">add_two_numbers</span><span class="p">(</span><span class="n">l1</span><span class="p">:</span> <span class="n">ListNode</span><span class="p">,</span> <span class="n">l2</span><span class="p">:</span> <span class="n">ListNode</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListNode</span><span class="p">:</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="n">l1</span><span class="o">.</span><span class="n">val</span> <span class="o">+</span> <span class="n">l2</span><span class="o">.</span><span class="n">val</span> <span class="o">+</span> <span class="n">c</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">val</span> <span class="o">//</span> <span class="mi">10</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="n">val</span> <span class="o">%</span> <span class="mi">10</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">l1</span><span class="o">.</span><span class="n">next</span> <span class="ow">or</span> <span class="n">l2</span><span class="o">.</span><span class="n">next</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">l1</span><span class="o">.</span><span class="n">next</span><span class="p">:</span>
+            <span class="n">l1</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">l2</span><span class="o">.</span><span class="n">next</span><span class="p">:</span>
+            <span class="n">l2</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="n">ret</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">add_two_numbers</span><span class="p">(</span><span class="n">l1</span><span class="o">.</span><span class="n">next</span><span class="p">,</span> <span class="n">l2</span><span class="o">.</span><span class="n">next</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ret</span>
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code><span class="n">combine</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
+
+<h2 id="create-list">Create list<a class="headerlink" href="#create-list" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">node1</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">node1</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">node1</span><span class="o">.</span><span class="n">next</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">node2</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">node2</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">node2</span><span class="o">.</span><span class="n">next</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Node 1&quot;</span><span class="p">)</span>
+<span class="n">node1</span><span class="o">.</span><span class="n">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Node 2&quot;</span><span class="p">)</span>
+<span class="n">node2</span><span class="o">.</span><span class="n">print</span><span class="p">()</span>
 </code></pre></div>
 
 
-<div class="highlight"><pre><span></span><code>[1, 2, 4, 5, 8, 9]
+<div class="highlight"><pre><span></span><code>Node 1
+2
+4
+3
+Node 2
+5
+6
+4
 </code></pre></div>
+
+<h2 id="result">Result<a class="headerlink" href="#result" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">add_two_numbers</span><span class="p">(</span><span class="n">node1</span><span class="p">,</span> <span class="n">node2</span><span class="p">)</span>
+<span class="n">result</span><span class="o">.</span><span class="n">print</span><span class="p">()</span>
+</code></pre></div>
+
+
+<div class="highlight"><pre><span></span><code>7
+0
+8
+</code></pre></div>
+
+<h2 id="time-on">Time: <span class="arithmatex">\(O(n)\)</span><a class="headerlink" href="#time-on" title="Permanent link">&para;</a></h2>
                 
               
               
@@ -452,7 +527,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../two_sums/" title="Two sums" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../combine_sorted_array/" title="Combine sorted array" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -461,19 +536,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Two sums
+                Combine sorted array
               </div>
             </div>
           </a>
         
         
-          <a href="../add_two_numbers/" title="Add two numbers" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../algorithms/sort/merge_sort/" title="Merge sort" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Add two numbers
+                Merge sort
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
