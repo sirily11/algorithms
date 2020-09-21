@@ -1,9 +1,8 @@
 from setuptools import setup, find_packages
 
-
 setup(
     name='docs_generator',
-    version='0.1.2',
+    version_format='{tag}.dev{commitcount}+{gitsha}',
     install_requires=[
         'jupyter',
         'mkdocs',
@@ -11,6 +10,7 @@ setup(
         'mkdocs-material',
         'pytest'
     ],
+    setup_requires=['setuptools-git-version'],
     packages=['docs_generator'],
     url='https://github.com/sirily11/algorithms',
     license='',
