@@ -1,10 +1,9 @@
 from setuptools import setup, find_packages
-from datetime import datetime
 
-now = datetime.now()
+
 setup(
     name='docs_generator',
-    version=f'{now.year}-{now.month}-{now.day}-{now.hour}',
+    version='0.1.2',
     install_requires=[
         'jupyter',
         'mkdocs',
