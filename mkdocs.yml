@@ -12,6 +12,8 @@ markdown_extensions:
 -   toc:
         permalink: true
 nav:
+-   Notebooks:
+    -   Raw: raw.md
 -   Algorithms:
         Sort:
         -   Merge sort: algorithms/sort/merge_sort.md

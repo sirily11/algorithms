@@ -8,3 +8,4 @@ docs_generator/build
 docs_generator/dist
 docs_generator/docs_generator.egg-info
 docs_generator/.pytest_cache
+notebooks/raw.ipynb

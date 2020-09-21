@@ -7,13 +7,12 @@ verify_ssl = true
 pipenv-setup = "*"
 
 [packages]
-jupyter = "*"
 pandas = "*"
 mkdocs = "*"
 pyyaml = "*"
 mkdocs-material = "*"
 pytest = "*"
-nbconvert = "==6.0.4"
+nbconvert = "*"
 
 [requires]
 python_version = "3.8"

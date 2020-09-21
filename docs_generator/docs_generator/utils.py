@@ -6,6 +6,7 @@ from .config import ignore_folder
 from os.path import join
 import shutil
 import os
+from .exporter import MdExporter
 
 
 def walk_folders(folder_name: str) -> List[Folder]:
@@ -25,15 +26,22 @@ def walk_folders(folder_name: str) -> List[Folder]:
 def generate_markdown(folders: List[Folder]):
     if os.path.exists(output_dir_name):
         shutil.rmtree(output_dir_name)
+
+    exporter = MdExporter()
     for folder in folders:
         output_dir = os.path.join(output_dir_name, folder.name)
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
+
         for file in folder.files:
-            run(['jupyter', 'nbconvert', f"--output-dir='{output_dir_name}'", "--to", "markdown", file.path,
-                 f"--output",
-                 f"{file.get_output_name(notebook_folder)}"])
-            # print(file.get_output_name(notebook_folder))
+            output, resources = exporter.from_filename(file.path)
+            output_name = join(output_dir_name, file.get_output_name(notebook_folder))
+            with open(output_name, 'w+') as f:
+                f.write(output)
+
+            # run(['jupyter', 'nbconvert', f"--output-dir='{output_dir_name}'", "--to", "markdown", file.path,
+            #      f"--output",
+            #      f"{file.get_output_name(notebook_folder)}", "--template", "markdown/index.md.j2"])
 
 
 def generate_config(folders: List[Folder], site_name="Algorithm"):
