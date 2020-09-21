@@ -36,9 +36,9 @@ def generate_markdown(folders: List[Folder]):
             # print(file.get_output_name(notebook_folder))
 
 
-def generate_config(folders: List[Folder]):
+def generate_config(folders: List[Folder], site_name="Algorithm"):
     configuration = {
-        "site_name": "Algorithm",
+        "site_name": site_name,
         "nav": [],
         "theme": {"name": "material", "features": ["instant", "navigation.expand"]},
         "extra_javascript": [

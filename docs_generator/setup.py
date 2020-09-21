@@ -4,7 +4,7 @@ setup(
     name='docs_generator',
     version_format='{tag}.dev{commitcount}+{gitsha}',
     install_requires=[
-        'jupyter',
+        'nbconvert',
         'mkdocs',
         'pyyaml',
         'mkdocs-material',
