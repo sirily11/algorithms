@@ -4,6 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pipenv-setup = "*"
 
 [packages]
 jupyter = "*"
@@ -12,7 +13,6 @@ mkdocs = "*"
 pyyaml = "*"
 mkdocs-material = "*"
 pytest = "*"
-
 
 [requires]
 python_version = "3.8"

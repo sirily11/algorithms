@@ -17,6 +17,11 @@ nav:
         -   Merge sort: algorithms/sort/merge_sort.md
         -   Insertion sort: algorithms/sort/insertion_sort.md
         -   Selection sort: algorithms/sort/selection_sort.md
+-   Problems:
+    -   Two sums: problems/two_sums.md
+    -   Two sums ii: problems/two_sums II.md
+    -   Add two numbers: problems/add_two_numbers.md
+    -   Combine sorted array: problems/combine_sorted_array.md
 site_name: Algorithm
 theme:
     features:

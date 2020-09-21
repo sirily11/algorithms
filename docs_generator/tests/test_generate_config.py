@@ -1,7 +1,6 @@
 import unittest
-from docs_generator.utils import create_object
-from docs_generator.Document import Document, Folder
-from json import dumps
+from docs_generator.docs_generator.utils import create_object
+from docs_generator.docs_generator.Document import Document
 
 
 class SomeTest(unittest.TestCase):

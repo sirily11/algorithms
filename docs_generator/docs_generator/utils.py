@@ -1,8 +1,8 @@
 from subprocess import run
-from typing import List, Dict, Tuple
+from typing import List, Dict
 from .config import *
-from docs_generator.Document import Folder, Document
-from docs_generator.config import ignore_folder
+from docs_generator.docs_generator.Document import Folder, Document
+from docs_generator.docs_generator.config import ignore_folder
 from os.path import join
 import shutil
 import os
