@@ -1,6 +1,6 @@
 from yaml import dump
-from docs_generator.docs_generator.config import *
-from docs_generator.docs_generator.utils import walk_folders, generate_markdown, generate_config
+from .config import *
+from .utils import walk_folders, generate_markdown, generate_config
 from shutil import copytree
 
 
