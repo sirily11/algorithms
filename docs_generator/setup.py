@@ -2,8 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
     name='docs_generator',
-    version='0.1.0',
-    packages=find_packages(),
+    version='0.1.1',
+    packages=[
+        'jupyter',
+        'mkdocs',
+        'pyyaml',
+        'mkdocs-material',
+        'pytest'
+    ],
     url='https://github.com/sirily11/algorithms',
     license='',
     author='sirily11',
