@@ -27,7 +27,7 @@ jobs:
         run: |
           pipenv run pytest
       - name: Build Docs
-        run: pipenv run python3 docs_generator.py
+        run: pipenv run python3 run.py
       - run: pipenv run mkdocs build
       - run: cp CNAME site/
       - name: Deploy
