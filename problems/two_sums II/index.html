@@ -16,7 +16,7 @@
     
     
       
-        <title>Two sums - Algorithm</title>
+        <title>Two sums ii - Algorithm</title>
       
     
     
@@ -50,7 +50,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#two-sum" class="md-skip">
+        <a href="#two-sum-ii" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Two sums
+              Two sums ii
             
           </span>
         </div>
@@ -173,18 +173,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../two_sums%20II/" title="Two sums ii" class="md-nav__link">
-      Two sums ii
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -196,12 +184,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Two sums
+        Two sums ii
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Two sums" class="md-nav__link md-nav__link--active">
-      Two sums
+    <a href="./" title="Two sums ii" class="md-nav__link md-nav__link--active">
+      Two sums ii
     </a>
     
       
@@ -238,10 +226,29 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#time-on" class="md-nav__link">
+    Time: \(O(n)\)
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../two_sums/" title="Two sums" class="md-nav__link">
+      Two sums
+    </a>
   </li>
 
         
@@ -394,6 +401,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#time-on" class="md-nav__link">
+    Time: \(O(n)\)
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -410,42 +424,60 @@
                   
                 
                 
-                <h1 id="two-sum">Two sum<a class="headerlink" href="#two-sum" title="Permanent link">&para;</a></h1>
-<p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</p>
-<p>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
-<p>You can return the answer in any order.</p>
+                <h1 id="two-sum-ii">Two sum II<a class="headerlink" href="#two-sum-ii" title="Permanent link">&para;</a></h1>
+<p>Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.</p>
+<p>The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2.</p>
+<p>Note:</p>
+<ul>
+<li>Your returned answers (both index1 and index2) are not zero-based.</li>
+<li>You may assume that each input would have exactly one solution and you may not use the same element twice.</li>
+</ul>
 <h2 id="example-1">Example 1<a class="headerlink" href="#example-1" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="n">Input</span><span class="o">:</span> <span class="n">nums</span> <span class="o">=</span> <span class="o">[</span><span class="mi">2</span><span class="o">,</span><span class="mi">7</span><span class="o">,</span><span class="mi">11</span><span class="o">,</span><span class="mi">15</span><span class="o">],</span> <span class="n">target</span> <span class="o">=</span> <span class="mi">9</span>
-<span class="n">Output</span><span class="o">:</span> <span class="o">[</span><span class="mi">0</span><span class="o">,</span><span class="mi">1</span><span class="o">]</span>
-<span class="n">Output</span><span class="o">:</span> <span class="n">Because</span> <span class="n">nums</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">+</span> <span class="n">nums</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">==</span> <span class="mi">9</span><span class="o">,</span> <span class="n">we</span> <span class="k">return</span> <span class="o">[</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">].</span>
+<div class="codehilite"><pre><span></span><code><span class="n">Input</span><span class="o">:</span> <span class="n">numbers</span> <span class="o">=</span> <span class="o">[</span><span class="mi">2</span><span class="o">,</span><span class="mi">7</span><span class="o">,</span><span class="mi">11</span><span class="o">,</span><span class="mi">15</span><span class="o">],</span> <span class="n">target</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">Output</span><span class="o">:</span> <span class="o">[</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">]</span>
+<span class="n">Explanation</span><span class="o">:</span> <span class="n">The</span> <span class="n">sum</span> <span class="n">of</span> <span class="mi">2</span> <span class="n">and</span> <span class="mi">7</span> <span class="k">is</span> <span class="mi">9</span><span class="o">.</span> <span class="n">Therefore</span> <span class="n">index1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">,</span> <span class="n">index2</span> <span class="o">=</span> <span class="mi">2</span><span class="o">.</span>
 </code></pre></div>
 
 
 <h2 id="example-2">Example 2<a class="headerlink" href="#example-2" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="n">Input</span><span class="o">:</span> <span class="n">nums</span> <span class="o">=</span> <span class="o">[</span><span class="mi">3</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">4</span><span class="o">],</span> <span class="n">target</span> <span class="o">=</span> <span class="mi">6</span>
-<span class="n">Output</span><span class="o">:</span> <span class="o">[</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">]</span>
+<div class="codehilite"><pre><span></span><code><span class="n">Input</span><span class="o">:</span> <span class="n">numbers</span> <span class="o">=</span> <span class="o">[</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">],</span> <span class="n">target</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">Output</span><span class="o">:</span> <span class="o">[</span><span class="mi">1</span><span class="o">,</span><span class="mi">3</span><span class="o">]</span>
 </code></pre></div>
 
 
 <h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 <span class="k">def</span> <span class="nf">two_sum</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">target</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
-    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">nums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
-                <span class="k">return</span> <span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+    <span class="n">left</span>  <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">right</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
 
-    <span class="k">return</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">+</span> <span class="n">nums</span><span class="p">[</span><span class="n">right</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="n">nums</span><span class="p">[</span><span class="n">left</span><span class="p">],</span> <span class="n">nums</span><span class="p">[</span><span class="n">right</span><span class="p">],</span> <span class="n">total</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">total</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
+            <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">elif</span> <span class="n">total</span> <span class="o">&gt;</span> <span class="n">target</span><span class="p">:</span>
+            <span class="n">right</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">left</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">right</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
 </code></pre></div>
 
 
-<div class="codehilite"><pre><span></span><code><span class="n">two_sum</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">6</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><code><span class="n">two_sum</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">6</span><span class="p">)</span>
 </code></pre></div>
 
 
-<div class="highlight"><pre><span></span><code>[1, 2]
+<div class="highlight"><pre><span></span><code>total 2 4 6
+
+
+
+
+
+[0, 2]
 </code></pre></div>
+
+<h2 id="time-on">Time: <span class="arithmatex">\(O(n)\)</span><a class="headerlink" href="#time-on" title="Permanent link">&para;</a></h2>
                 
               
               
@@ -464,28 +496,14 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../two_sums%20II/" title="Two sums ii" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Two sums ii
-              </div>
-            </div>
-          </a>
         
-        
-          <a href="../combine_sorted_array/" title="Combine sorted array" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../two_sums/" title="Two sums" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Combine sorted array
+                Two sums
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
