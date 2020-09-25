@@ -13,6 +13,7 @@ pyyaml = "*"
 mkdocs-material = "*"
 pytest = "*"
 nbconvert = "*"
+jupyter = "*"
 
 [requires]
 python_version = "3.8"
