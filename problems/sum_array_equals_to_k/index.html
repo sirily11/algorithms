@@ -16,7 +16,7 @@
     
     
       
-        <title>Two sums ii - Algorithm</title>
+        <title>Sum array equals to k - Algorithm</title>
       
     
     
@@ -50,7 +50,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#two-sum-ii" class="md-skip">
+        <a href="#subarray-sum-equals-k" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Two sums ii
+              Sum array equals to k
             
           </span>
         </div>
@@ -221,18 +221,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../sum_array_equals_to_k/" title="Sum array equals to k" class="md-nav__link">
-      Sum array equals to k
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -244,12 +232,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Two sums ii
+        Sum array equals to k
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Two sums ii" class="md-nav__link md-nav__link--active">
-      Two sums ii
+    <a href="./" title="Sum array equals to k" class="md-nav__link md-nav__link--active">
+      Sum array equals to k
     </a>
     
       
@@ -273,22 +261,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-2" class="md-nav__link">
-    Example 2
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#solution" class="md-nav__link">
     Solution
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#time-on" class="md-nav__link">
-    Time: \(O(n)\)
   </a>
   
 </li>
@@ -297,6 +271,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../two_sums%20II/" title="Two sums ii" class="md-nav__link">
+      Two sums ii
+    </a>
   </li>
 
         
@@ -474,22 +460,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-2" class="md-nav__link">
-    Example 2
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#solution" class="md-nav__link">
     Solution
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#time-on" class="md-nav__link">
-    Time: \(O(n)\)
   </a>
   
 </li>
@@ -510,52 +482,64 @@
                   
                 
                 
-                <h1 id="two-sum-ii">Two sum II<a class="headerlink" href="#two-sum-ii" title="Permanent link">&para;</a></h1>
-<p>Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.</p>
-<p>The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2.</p>
-<p>Note:</p>
-<ul>
-<li>Your returned answers (both index1 and index2) are not zero-based.</li>
-<li>You may assume that each input would have exactly one solution and you may not use the same element twice.</li>
-</ul>
+                <h1 id="subarray-sum-equals-k">Subarray Sum Equals K<a class="headerlink" href="#subarray-sum-equals-k" title="Permanent link">&para;</a></h1>
+<p>Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k.</p>
 <h2 id="example-1">Example 1<a class="headerlink" href="#example-1" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="n">Input</span><span class="o">:</span> <span class="n">numbers</span> <span class="o">=</span> <span class="o">[</span><span class="mi">2</span><span class="o">,</span><span class="mi">7</span><span class="o">,</span><span class="mi">11</span><span class="o">,</span><span class="mi">15</span><span class="o">],</span> <span class="n">target</span> <span class="o">=</span> <span class="mi">9</span>
-<span class="n">Output</span><span class="o">:</span> <span class="o">[</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">]</span>
-<span class="n">Explanation</span><span class="o">:</span> <span class="n">The</span> <span class="n">sum</span> <span class="n">of</span> <span class="mi">2</span> <span class="n">and</span> <span class="mi">7</span> <span class="k">is</span> <span class="mi">9</span><span class="o">.</span> <span class="n">Therefore</span> <span class="n">index1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">,</span> <span class="n">index2</span> <span class="o">=</span> <span class="mi">2</span><span class="o">.</span>
-</code></pre></div>
-
-
-<h2 id="example-2">Example 2<a class="headerlink" href="#example-2" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="n">Input</span><span class="o">:</span> <span class="n">numbers</span> <span class="o">=</span> <span class="o">[</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">],</span> <span class="n">target</span> <span class="o">=</span> <span class="mi">6</span>
-<span class="n">Output</span><span class="o">:</span> <span class="o">[</span><span class="mi">1</span><span class="o">,</span><span class="mi">3</span><span class="o">]</span>
+<div class="codehilite"><pre><span></span><code><span class="n">Input</span><span class="o">:</span><span class="n">nums</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="o">,</span><span class="mi">1</span><span class="o">,</span><span class="mi">1</span><span class="o">],</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">Output</span><span class="o">:</span> <span class="mi">2</span>
 </code></pre></div>
 
 
 <h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
-<span class="k">def</span> <span class="nf">two_sum</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">target</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
-    <span class="n">left</span>  <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">right</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-
-    <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">:</span>
-        <span class="n">total</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">+</span> <span class="n">nums</span><span class="p">[</span><span class="n">right</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">total</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
-            <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">elif</span> <span class="n">total</span> <span class="o">&gt;</span> <span class="n">target</span><span class="p">:</span>
-            <span class="n">right</span> <span class="o">-=</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="p">[</span><span class="n">left</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">right</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+<p>First let say we have a array</p>
+<div class="codehilite"><pre><span></span><code><span class="err">[1, 2, 3, 4]</span>
 </code></pre></div>
 
 
-<div class="codehilite"><pre><span></span><code><span class="n">two_sum</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="mi">6</span><span class="p">)</span>
+<p>Then we have a pre-array which contains the sum of the elements before.</p>
+<div class="codehilite"><pre><span></span><code><span class="err">[1, 3, 6, 10]</span>
 </code></pre></div>
 
 
-<div class="highlight"><pre><span></span><code>[1, 3]
+<p>And we can find that the sum of sub-array <code>[2, 3, 4]</code> is equal to difference between <code>10</code>
+and <code>1</code></p>
+<p>And now we can have a equation of sum of array from index j to index k
+<span class="arithmatex">\(<span class="arithmatex">\(\sum_{i=j}^{k}array[i] = pre[k] - pre[j - 1] = target\)</span>\)</span></p>
+<p>Or</p>
+<div class="arithmatex">\[pre[k] - target = pre[j - 1]\]</div>
+<p>And we can first store the value <span class="arithmatex">\(pre[j-1]\)</span> and then find if any <span class="arithmatex">\(pre[k] - target\)</span> is equal to the value we have before.</p>
+<ul>
+<li>If so, then there is a sub-array with sum equals to target</li>
+<li>Else, go to next value</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span>
+<span class="k">def</span> <span class="nf">find_subarray</span><span class="p">(</span><span class="n">arr</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">target</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="n">pre</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">visited_map</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)):</span>
+        <span class="n">pre</span> <span class="o">+=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="c1"># find if pre[k] - target exists</span>
+        <span class="k">if</span> <span class="n">pre</span> <span class="o">-</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">visited_map</span><span class="p">:</span>
+            <span class="n">count</span>  <span class="o">+=</span> <span class="n">visited_map</span><span class="p">[</span><span class="n">pre</span> <span class="o">-</span> <span class="n">target</span><span class="p">]</span>
+        <span class="c1"># Set the current value to the map</span>
+        <span class="n">visited_map</span><span class="p">[</span><span class="n">pre</span><span class="p">]</span> <span class="o">=</span> <span class="n">visited_map</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pre</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="n">find_subarray</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<h2 id="time-on">Time: <span class="arithmatex">\(O(n)\)</span><a class="headerlink" href="#time-on" title="Permanent link">&para;</a></h2>
+
+<div class="highlight"><pre><span></span><code>2
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">find_subarray</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+
+
+<div class="highlight"><pre><span></span><code>55
+</code></pre></div>
                 
               
               
@@ -574,7 +558,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../sum_array_equals_to_k/" title="Sum array equals to k" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../combine_sorted_array/" title="Combine sorted array" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -583,19 +567,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Sum array equals to k
+                Combine sorted array
               </div>
             </div>
           </a>
         
         
-          <a href="../two_sums/" title="Two sums" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../two_sums%20II/" title="Two sums ii" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Two sums
+                Two sums ii
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
