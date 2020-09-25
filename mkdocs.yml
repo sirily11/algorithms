@@ -16,14 +16,21 @@ nav:
     -   Raw: raw.md
 -   Algorithms:
         Sort:
-        -   Merge sort: algorithms/sort/merge_sort.md
         -   Insertion sort: algorithms/sort/insertion_sort.md
+        -   Merge sort: algorithms/sort/merge_sort.md
         -   Selection sort: algorithms/sort/selection_sort.md
 -   Problems:
-    -   Two sums: problems/two_sums.md
-    -   Two sums ii: problems/two_sums II.md
     -   Add two numbers: problems/add_two_numbers.md
+    -   Climbing stairs: problems/climbing_stairs.md
     -   Combine sorted array: problems/combine_sorted_array.md
+    -   Two sums ii: problems/two_sums II.md
+    -   Two sums: problems/two_sums.md
+    -   Sub array:
+        -   Longest substring without repeat: problems/sub array/longest_substring_without_repeat.md
+        -   Maximum sub array: problems/sub array/maximum_sub_array.md
+        -   Sum array equals to k: problems/sub array/sum_array_equals_to_k.md
+    -   List:
+        -   Reverse list: problems/list/reverse_list.md
 site_name: Algorithm
 theme:
     features:
