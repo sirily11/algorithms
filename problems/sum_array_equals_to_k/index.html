@@ -503,8 +503,8 @@
 
 <p>And we can find that the sum of sub-array <code>[2, 3, 4]</code> is equal to difference between <code>10</code>
 and <code>1</code></p>
-<p>And now we can have a equation of sum of array from index j to index k
-<span class="arithmatex">\(<span class="arithmatex">\(\sum_{i=j}^{k}array[i] = pre[k] - pre[j - 1] = target\)</span>\)</span></p>
+<p>And now we can have a equation of sum of array from index j to index k</p>
+<div class="arithmatex">\[\sum_{i=j}^{k}array[i] = pre[k] - pre[j - 1] = target\]</div>
 <p>Or</p>
 <div class="arithmatex">\[pre[k] - target = pre[j - 1]\]</div>
 <p>And we can first store the value <span class="arithmatex">\(pre[j-1]\)</span> and then find if any <span class="arithmatex">\(pre[k] - target\)</span> is equal to the value we have before.</p>
